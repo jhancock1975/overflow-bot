@@ -115,9 +115,7 @@ class ChatbotInterface(cmd.Cmd):
 
     """ use text entered as input to the chatbot """
     def default(self, line):
-        print 'default(%s)' % line
         response(line)
-        return cmd.Cmd.default(self, line)
 
 if __name__ == '__main__':
     ChatbotInterface().cmdloop()
