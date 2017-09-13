@@ -1,0 +1,57 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "What's up?", "Hola"],
+         "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?", "Are you being helped?", "How may I help", "Thank you for contacting us."],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Adios"],
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon.", "Thank you for being a valued customer."]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Gracias"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure.", "You are welcome."]
+        },
+        {"tag": "hours",
+         "patterns": ["What hours are you open?", "What are your hours?", "When are you open?", "Are you open?", "When do you close?" ],
+         "responses": ["We're open 24-7-365", "We are here whenever you need us.", "We are always open."]
+        },
+        {"tag": "products",
+         "patterns": ["What kind of card should I get?", "Can I get a new card?", "I want a credit card.", "Do you sell cards?" ],
+         "responses": ["I can set you up with a new card, we just need to get you approved.", "Sure, I can help with that. Let's get started.", "Absolutely, let's get you set up."]
+        },
+        {"tag": "bad_payments",
+         "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Can I pay with another card?", "Do you take Visa?" ],
+         "responses": ["I'm sorry but legally we cannot accept payments from other credit cards.", "We apologize, but we cannot accept payments from other credit cards.", "You can pay with a debit card."]
+        },
+        {"tag": "opentoday",
+         "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?"],
+         "responses": ["We are open 24-7-365", "We are open all the time.", "We never close. We are always here for you."]
+        },
+        {"tag": "payments",
+         "patterns": ["I would like to make a payment.", "Can I pay my bil?", "I need to pay.", "Can we settle up?" ],
+         "responses": ["Sure, I would be glad to assist you with that.", "Absolutely.  would you like to make the payment from your account ending in..."],
+         "context_set": "makepayment"
+        },
+        {"tag": "now",
+         "patterns": ["When will it show up?", "How long until we see that?", "Why don't I see that yet?"],
+         "responses": ["Please keep in mind that it may take up to 24-36 hours for the funds to post to your account.", "Funds are generally posted within 24-36 hours."],
+         "context_filter": "makepayment"
+        },
+        {"tag" : "dispute",
+		 "patterns" : ["I wamt to dispute a charge.", "I see some charges that are not mine.", "What's this charge for?", "I wanted to ask about a transaction."],
+		 "responses": ["Sure, just a moment while I take a look at your account.", "I would be happy to look into that for you."],
+		 "context_set": "dispute"
+	    },
+	    {"tag" : "note",
+		 "patterns" : ["Can you put a note on my account?", "Can you put something saying this?", "Is there a way we can attach that information?"],
+		 "responses": ["I would be glad to add a note.", "Sure, we will add that in a note on your account."],
+		 "context_set": "note"
+	    },
+	    {"tag" : "disputeres",
+		 "patterns" : ["That's correct.  I didn't make that transaction.", "Right, can we take that off?", "Can you refund me that?", "That's the charge."],
+		 "responses": ["I will start the dispute for you, and the case will be reviewed.", "Sure, one moment while I crete a case in our disputes system."],
+		 "context_set": "dispute"
+	    } 
+	  ]
+}
