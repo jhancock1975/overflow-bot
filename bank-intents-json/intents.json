@@ -10,7 +10,7 @@
         },
         {"tag": "thanks",
          "patterns": ["Thanks", "Thank you", "That's helpful", "Gracias"],
-         "responses": ["Happy to help!", "Any time!", "My pleasure", "You are welcome."]
+         "responses": ["Happy to help!", "Any time!", "My pleasure.", "You are welcome."]
         },
         {"tag": "hours",
          "patterns": ["What hours are you open?", "What are your hours?", "When are you open?", "Are you open?", "When do you close?" ],
@@ -34,7 +34,7 @@
          "context_set": "makepayment"
         },
         {"tag": "now",
-         "patterns": ["when"],
+         "patterns": ["When will it show up?", "How long until we see that?", "Why don't I see that yet?"],
          "responses": ["Please keep in mind that it may take up to 24-36 hours for the funds to post to your account.", "Funds are generally posted within 24-36 hours."],
          "context_filter": "makepayment"
         },
