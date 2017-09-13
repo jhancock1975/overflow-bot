@@ -2,7 +2,11 @@
 model.tflearn.*
 tflearn_logs/
 training_data
+checkpoint
 
 #ignore vim temporary files
 *.swp
 *.swo
+
+#ignore log files
+*.log
