@@ -1,0 +1,4 @@
+# don't include files created when running the bot
+model.tflearn.*
+tflearn_logs/
+training_data

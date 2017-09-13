@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/ubuntu/git/overflow-bot/src/model.tflearn"
+all_model_checkpoint_paths: "/home/ubuntu/git/overflow-bot/src/model.tflearn"
