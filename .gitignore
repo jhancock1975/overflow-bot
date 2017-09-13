@@ -2,3 +2,7 @@
 model.tflearn.*
 tflearn_logs/
 training_data
+
+#ignore vim temporary files
+*.swp
+*.swo

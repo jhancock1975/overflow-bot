@@ -102,13 +102,16 @@ def response(sentence, userID='123', show_details=False):
 
             results.pop(0)
 
+print("\n\n\n\n");
+print("Initialization complete.")
+print("Type \"help\" for usage documentation.")
+print("Please strike up a conversation with the chat bot.");
+print("\n\n\n\n");
 
 class ChatbotInterface(cmd.Cmd):
     """Simple command processor example."""
     
-    def do_greet(self, line):
-        print "Chatbot Version 0.1"
-    
+   
     """ enter EOF to exit the program, or type ctrl-d """
     def do_EOF(self, line):
         return True
