@@ -10,3 +10,9 @@ checkpoint
 
 #ignore log files
 *.log
+
+#ignore eclipse project files
+.project
+.pydevproject
+.settings/
+
