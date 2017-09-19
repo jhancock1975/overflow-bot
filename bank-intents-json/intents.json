@@ -40,7 +40,7 @@
          "context_filter": "makepayment"
         },
         {"tag" : "dispute",
-		 "patterns" : ["I wamt to dispute a charge.", "I see some charges that are not mine.", "What's this charge for?", "I wanted to ask about a transaction."],
+		 "patterns" : ["I want to dispute a charge.", "I see some charges that are not mine.", "What's this charge for?", "I wanted to ask about a transaction."],
 		 "responses": ["Sure, just a moment while I take a look at your account.", "I would be happy to look into that for you."],
 		 "context_set": "dispute"
 	    },
