@@ -6,7 +6,8 @@
         },
         {"tag": "goodbye",
          "patterns": ["Bye", "See you later", "Goodbye", "Adios"],
-         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon.", "Thank you for being a valued customer."]
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon.", "Thank you for being a valued customer."],
+         "context_set": ""
         },
         {"tag": "thanks",
          "patterns": ["Thanks", "Thank you", "That's helpful", "Gracias"],

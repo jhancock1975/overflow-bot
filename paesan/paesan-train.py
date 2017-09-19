@@ -105,9 +105,9 @@ train_y = list(training[:,1])
 tf.reset_default_graph()
 # Build neural network
 net = tflearn.input_data(shape=[None, len(train_x[0])])
-net = tflearn.fully_connected(net, 16)
-net = tflearn.fully_connected(net, 16)
-net = tflearn.fully_connected(net, len(train_y[0]), activation='softmax')
+net = tflearn.embedding(net, input_dim=10000, output_dim=128)
+net = tflearn.lstm(net, 128, dropout=0.8)
+net = tflearn.fully_connected(net, 12, activation='softmax')
 net = tflearn.regression(net)
 
 # Define model and setup tensorboard

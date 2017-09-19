@@ -16,3 +16,5 @@ checkpoint
 .pydevproject
 .settings/
 
+# ignore supreme court dialog data
+supreme-court-intents/
