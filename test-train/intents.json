@@ -56,7 +56,7 @@
 	    },
 		{"tag" : "address",
 		 "patterns" : ["Where can I send my payment?", "What's your address?", "Where are you located?", "What is the billing address?"],
-		 "responses": ["1500 N 136th Avenue"],
+		 "responses": ["1500 N 136th Avenue"]
 	    } 		
 	  ]
 }
