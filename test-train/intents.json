@@ -53,6 +53,10 @@
 		 "patterns" : ["That's correct.  I didn't make that transaction.", "Right, can we take that off?", "Can you refund me that?", "That's the charge."],
 		 "responses": ["I will start the dispute for you, and the case will be reviewed.", "Sure, one moment while I crete a case in our disputes system."],
 		 "context_set": "dispute"
-	    } 
+	    },
+		{"tag" : "address",
+		 "patterns" : ["Where can I send my payment?", "What's your address?", "Where are you located?", "What is the billing address?"],
+		 "responses": ["1500 N 136th Avenue"],
+	    } 		
 	  ]
 }
