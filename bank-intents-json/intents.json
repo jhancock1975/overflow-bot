@@ -40,19 +40,20 @@
          "context_filter": "makepayment"
         },
         {"tag" : "dispute",
-		 "patterns" : ["I want to dispute a charge.", "I see some charges that are not mine.", "What's this charge for?", "I wanted to ask about a transaction."],
-		 "responses": ["Sure, just a moment while I take a look at your account.", "I would be happy to look into that for you."],
-		 "context_set": "dispute"
-	    },
-	    {"tag" : "note",
-		 "patterns" : ["Can you put a note on my account?", "Can you put something saying this?", "Is there a way we can attach that information?"],
-		 "responses": ["I would be glad to add a note.", "Sure, we will add that in a note on your account."],
-		 "context_set": "note"
-	    },
-	    {"tag" : "disputeres",
-		 "patterns" : ["That's correct.  I didn't make that transaction.", "Right, can we take that off?", "Can you refund me that?", "That's the charge."],
-		 "responses": ["I will start the dispute for you, and the case will be reviewed.", "Sure, one moment while I crete a case in our disputes system."],
-		 "context_set": "dispute"
-	    } 
-	  ]
+	 "patterns" : ["I want to dispute a charge.", "I see some charges that are not mine.", "What's this charge for?", "I wanted to ask about a transaction."],
+	 "responses": ["Sure, just a moment while I take a look at your account.", "I would be happy to look into that for you."],
+	 "context_set": "dispute"
+    	},
+      {"tag" : "note",
+	 "patterns" : ["Can you put a note on my account?", "Can you put something saying this?", "Is there a way we can attach that information?"],
+	 "responses": ["I would be glad to add a note.", "Sure, we will add that in a note on your account."],
+	 "context_set": "note"
+      },
+      {"tag" : "disputeres",
+	"patterns" : ["That's correct.  I didn't make that transaction.", "Right, can we take that off?", "Can you refund me that?", "That's the charge."],
+	"responses": ["I will start the dispute for you, and the case will be reviewed.", "Sure, one moment while I crete a case in our disputes system."],
+	"context_set": "dispute"
+     } 
+  ]
+
 }
